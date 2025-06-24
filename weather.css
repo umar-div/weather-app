@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    height: 60%;
+    width: 30%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition:.6s ease;
+     transform: scale(0.9);
+     
+}
+
+#zain {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#in {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transform: scale(1);}
+#in:hover{
+ transform: scale(1.02);
+}
+#btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+     transition: transform 0.2s ease, box-shadow 0.2s ease
+}
+    #btn:hover {
+    transform: scale(1.3);
+
+}
+
+#btn img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+#rain{
+   width: 250px;
+}
+#rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ده هو المفتاح */
+    justify-content: center;
+    gap: 10px; /* مسافة مناسبة بين العناصر */
+   
+}
+#cti{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    
+
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+   font-weight: 900;
+}
+p{
+     text-align: center;
+     color:#fff;
+      font-weight:900;
+}
+#HNN {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 80px;
+  margin-left:25px;
+}
+
+#hum,
+#win {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#humidity,
+#wind {
+  width: 30px;
+  height: 30px;
+  margin: 0; }
+
+
+
+#nosnos{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+    /* هنا تظبط الresponsivenessبتاع الموقع حسب الموبايل */
+  #card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  #zain {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  #btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #HNN {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #humidity,
+  #wind {
+    width: 30px;
+    height: 30px;
+  }
+
+  #in {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #temp {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #card {
+    transition: all 0.3s ease-in-out;
+  }
+}

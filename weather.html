@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <div id="zain">
+            <input id="in" placeholder="enter the city">
+            <button id="btn"><img src="search.png"></button>
+            </div>
+          <div id="rest">
+           <div id="cti">
+            <div id="here"></div>
+            <div id="nosnos">
+            <p id="temp">23°C</p>
+            <h2 id="city"></h2>
+            </div>
+            </div>
+            <div id="HNN">
+                <div id="hum">
+                    <img id='humidity'src="humidity.png">
+                    <label id="hud" style="color: white;"><b></b></label>
+                </div>
+            
+                <div id="win">
+                    <img id='wind' src="wind.png">
+                    <label id="wwe" style="color: white;"><B></B></label>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    </div>
+    
+    
+
+
+    <script src="weather.js"></script>
+</body>
+</html>
