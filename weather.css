@@ -135,14 +135,14 @@ p{
   }
 
   #zain {
-    flex-direction: column;
+    
     gap: 10px;
   }
 
   #btn {
-    width: 100%;
+    width: 20%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 50%;
   }
 
   #btn img {
@@ -151,8 +151,7 @@ p{
   }
 
   #HNN {
-    flex-direction: column;
-    gap: 15px;
+    display: flex;
   }
 
   #humidity,
